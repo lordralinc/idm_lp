@@ -1,22 +1,117 @@
-{
-  "tokens": [],
-  "secret_code": "",
-  "delete_all_notify": false,
-  "ru_captcha_key": "",
-  "igrored_members": [],
-  "igrored_global_members": [],
-  "muted_members": [],
-  "aliases": [],
-  "service_prefixes": [
-    "!слп",
-    ".слп"
-  ],
-  "self_prefixes": [
-    "!л",
-    ".л"
-  ],
-  "duty_prefixes": [
-    "!лд",
-    ".лд"
-  ]
-}
+"aliases": [
+    {
+      "name": "помощь",
+      "command_from": ".помощь",
+      "command_to": "помощь"
+    },
+    {
+      "name": "инфо",
+      "command_from": "инфо",
+      "command_to": "инфо"
+    },
+    {
+      "name": "шаб",
+      "command_from": ".шаб",
+      "command_to": "шаб"
+    },
+    {
+      "name": "шабы",
+      "command_from": "шабы",
+      "command_to": "шабы все"
+    },
+    {
+      "name": "дшаб",
+      "command_from": ".дш",
+      "command_to": "дшаб"
+    },
+    {
+      "name": "дшабы",
+      "command_from": "дшабы",
+      "command_to": "дшабы все"
+    },
+    {
+      "name": "+др",
+      "command_from": "+др",
+      "command_to": "+др"
+    },
+    {
+      "name": "-др",
+      "command_from": "-др",
+      "command_to": "-др"
+    },
+    {
+      "name": "+чс",
+      "command_from": "+чс",
+      "command_to": "+чс"
+    },
+    {
+      "name": "-чс",
+      "command_from": "-чс",
+      "command_to": "-чс"
+    },
+    {
+      "name": "н",
+      "command_from": "н"
+      "command_to": "н"
+    },
+    {
+      "name": "чат"
+      "command_from": "чат"
+      "command_to": "чат"
+    },
+    {
+      "name": лс
+      "command_from": "!лс"
+      "command_to": "влс"
+    },
+    {
+      "name": "дежинфо"
+      "command_from": "!деж"
+      "command_to": "дежинфо"
+    },
+    {
+      "name": "смсинфо"
+      "command_from": "!смс"
+      "command_to": "смсинфо"
+    },
+    {
+      "name": "деж"
+      "command_from": ".деж"
+      "command_to": "деж"
+     },
+     {
+      "name": "ачивки"
+      "command_from": "ачивки"
+      "command_to": "ачивки"
+     },
+     {
+      "name": "+шаб"
+      "command_from": "+шаб"
+      "command_to": "+шаб"
+     },
+     {
+      "name": "-шаб"
+      "command_from": "-шаб"
+      "command_to": "-шаб"
+     },
+     {
+      "name": "-дшаб"
+      "command_from": "-дшаб"
+      "command_to": "-дшаб"
+     },
+     {
+      "name": "бомба"
+      "command_from": ".бм"
+      "command_to": "бомба"
+     },
+     {
+      "name": "понг"
+      "command_from": "понг"
+      "command_to": "понг"
+     },
+     {
+      "name": "пинг
+      "command_from": ".пинг"
+      "command_to": "пинг"
+     },
+]
