@@ -45,9 +45,14 @@ async def info_wrapper(message: Message, **kwargs):
     ▶ Добавлять пригласившего в ЧС: {"&#9989;" if db.auto_exit_from_chat_add_to_black_list else "&#10060;"}
     
     ▶ Повторялка: {"&#9989;" if db.repeater_active else "&#10060;"}
-    ▶ Триггер на повторялку: {db.repeater_word}
+    ▶ Повторялка | Триггер: {db.repeater_word}
 
     ▶ Заражение в ответ: {"&#9989;" if db.bio_reply else "&#10060;"}
+    
+    ▶ NoMeta: {"&#9989;" if db.nometa_enable else "&#10060;"}
+    ▶ NoMeta | Количество секунд: {db.nometa_delay}
+    ▶ NoMeta | Сообщение: <<{db.nometa_message}>>
+    ▶ NoMeta | Вложения: {len(db.nometa_attachments)}
         
     ▶ Префикс ДД: {db.dd_prefix}
     ▶ Сервисные префиксы: {' '.join(db.service_prefixes)}

@@ -24,13 +24,12 @@ from idm_lp import database
 
 
 class Database(BaseModel, ContextInstanceMixin):
-    
     secret_code: str = ""
     ru_captcha_key: str = ""
     repeater_word: str = ".."
     dd_prefix: str = "дд"
 
-    bio_reply: bool = False    
+    bio_reply: bool = False
     repeater_active: bool = False
 
     delete_all_notify: bool = False
@@ -39,7 +38,10 @@ class Database(BaseModel, ContextInstanceMixin):
     auto_exit_from_chat_add_to_black_list: bool = False
     disable_notifications: bool = False
 
-
+    nometa_enable: bool = False
+    nometa_message: str = "nometa.xyz"
+    nometa_attachments: List[str] = []
+    nometa_delay: float = 5 * 60
 
     tokens: List[str] = []
     service_prefixes: List[str] = [".слп", "!слп"]
@@ -86,9 +88,9 @@ class Database(BaseModel, ContextInstanceMixin):
                 db = Database(**json.loads(file.read()))
         except FileNotFoundError:
             db = None
-        
+
         if not db:
-             raise DatabaseError(
+            raise DatabaseError(
                 'IDMLP не установлен',
                 f"Для начала запустите процесс установки командой setup"
             )
@@ -106,7 +108,3 @@ class Database(BaseModel, ContextInstanceMixin):
             file.write(
                 self.json(**{"ensure_ascii": False, "indent": 2})
             )
-
-    
-
-    

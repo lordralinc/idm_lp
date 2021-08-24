@@ -1,7 +1,8 @@
 ### IDM multi - LP module
-![Version](https://img.shields.io/badge/version-1.11.4-blue)
+![PyPI](https://img.shields.io/pypi/v/idm-lp)
 ![GitHub](https://img.shields.io/github/license/lordralinc/idm_lp)
 ![GitHub repo size](https://img.shields.io/github/repo-size/lordralinc/idm_lp)
+[![Downloads](https://pepy.tech/badge/idm-lp)](https://pepy.tech/project/idm-lp)
 
 LP модуль позволяет работать приемнику сигналов «IDM multi» работать в любых чатах.
 Так же он добавляет игнор, глоигнор, мут и алиасы.
@@ -220,3 +221,8 @@ service idmlp start
 ***
 - `{сервисный префикс}` +заражение — включить ответное заражение.
 - `{сервисный префикс}` -заражение — отключить ответное заражение.
+***
+- `{сервисный префикс}` +nometa — включить nometa.
+- `{сервисный префикс}` -nometa — отключить nometa.
+- `{сервисный префикс}` nometa сообщение `{текст}` — изменить текст сообщения.
+- `{сервисный префикс}` nometa задержка `{задержка}` — изменить задержку.

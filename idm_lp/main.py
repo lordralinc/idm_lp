@@ -14,7 +14,6 @@ from idm_lp.error_handlers import error_handlers_bp
 from idm_lp.database import Database, DatabaseError
 from idm_lp.utils import check_ping
 
-
 if const.ALLOW_SENTRY:
     import sentry_sdk
 
@@ -77,6 +76,14 @@ parser.add_argument(
     help='Логи в файл'
 )
 
+parser.add_argument(
+    '--enable_eval',
+    dest="enable_eval",
+    action="store_const",
+    const=True,
+    help='Разрешить eval/exec'
+)
+
 
 def lp_startup(database):
     async def _lp_startup():
@@ -131,6 +138,7 @@ def run_lp():
     const.LOG_TO_PATH = args.log_to_path if args.log_to_path else False
     const.LOGGER_LEVEL = args.logger_level
     const.VKBOTTLE_LOGGER_LEVEL = args.vkbottle_logger_level
+    const.ENABLE_EVAL = args.enable_eval if args.enable_eval else False
 
     if isinstance(logger, Logger):
         logger.global_logger_level = LoggerLevel.get_int(const.LOGGER_LEVEL)
@@ -144,7 +152,8 @@ def run_lp():
         f" -> Использовать папку AppData/IDM    -> {const.USE_APP_DATA}\n"
         f" -> Базовый домен                     -> {const.BASE_DOMAIN}\n"
         f" -> API                               -> {const.GET_LP_INFO_LINK()}\n"
-        f" -> Callback link                     -> {const.CALLBACK_LINK()}\n\n"
+        f" -> Callback link                     -> {const.CALLBACK_LINK()}\n"
+        f" -> Разрешить eval/exec               -> {const.ENABLE_EVAL}\n\n"
     )
 
     try:
@@ -191,4 +200,3 @@ def run_lp():
             auto_reload=False,
             on_startup=lp_startup(db),
         )
-
