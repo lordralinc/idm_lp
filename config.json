@@ -1,0 +1,40 @@
+{
+  "tokens": [
+    "3c5ae39ee5f1ca407d14710cd6a089f0fa4eaccce416586988af49e56fe9c1f26535704c156b574601110",
+    "e3438571afd82fa326e0d43ef13ee7a58c5ff162131dab5c233c8ba18baf75075dd1ab3828babc63a8aa5",
+    "06ec8ed093bd7f95165348dd28cd7f25382c973bab3c54503952512e6f74fc51ed0a43018ac97fe78652b"
+  ],
+  "secret_code": ""vlpqba0ft,
+  "delete_all_notify": false,
+  "ru_captcha_key": "",
+  "ignored_members": [],
+  "ignored_global_members": [],
+  "muted_members": [],
+  "aliases": [],
+  "service_prefixes": [
+    "!слп",
+    ".слп"
+  ],
+  "self_prefixes": [
+    "!л",
+    ".л",
+    "ф"
+  ],
+  "duty_prefixes": [
+    "!лд",
+    ".лд"
+  ],
+  "sloumo": [],
+  "auto_exit_from_chat": false,
+  "auto_exit_from_chat_delete_chat": false,
+  "auto_exit_from_chat_add_to_black_list": false,
+  "add_to_friends_on_chat_enter": [],
+  "role_play_commands": [],
+  "disable_notifications": true,
+  "trusted": [],
+  "repeater_word": "..",
+  "repeater_active": false,
+  "regex_deleter": [],
+  "dd_prefix": "дд",
+  "bio_reply": false
+}
