@@ -3,6 +3,7 @@
 ![GitHub](https://img.shields.io/github/license/lordralinc/idm_lp)
 ![GitHub repo size](https://img.shields.io/github/repo-size/lordralinc/idm_lp)
 [![Downloads](https://pepy.tech/badge/idm-lp)](https://pepy.tech/project/idm-lp)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Flordralinc%2Fidm_lp.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Flordralinc%2Fidm_lp?ref=badge_shield)
 
 LP модуль позволяет работать приемнику сигналов «IDM multi» работать в любых чатах.
 Так же он добавляет игнор, глоигнор, мут и алиасы.
@@ -226,3 +227,6 @@ service idmlp start
 - `{сервисный префикс}` -nometa — отключить nometa.
 - `{сервисный префикс}` nometa сообщение `{текст}` — изменить текст сообщения.
 - `{сервисный префикс}` nometa задержка `{задержка}` — изменить задержку.
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Flordralinc%2Fidm_lp.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Flordralinc%2Fidm_lp?ref=badge_large)
